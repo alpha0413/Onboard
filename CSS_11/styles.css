@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    /* コンテンツ面積の設定 */
+    width: 500px;
+    height: 250px;
+
+    /* その他ボックスレイアウト設定 */
+    position: relative;
+    top: 200px;
+    left: 400px;
+
+    /* 背景色と文字色の設定 */
+    background-color: #4b0082;
+    color: #ffffff;
+}

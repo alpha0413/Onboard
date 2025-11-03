@@ -1,0 +1,26 @@
+/*
+@charset "UTF-8";
+
+疑似クラスとは、リンクやボタン要素にカーソルを合わせると色が変わるなど、
+状況に応じたスタイルの変更を行うことを言います。
+代表例：hover
+<button>hoverすると変化します</button>
+
+button {
+    background-color: #800080; 紫
+    その他のスタイル
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    width: 500px;
+    height: 300px;
+    padding: 100px;
+    margin: 100px;
+}
+
+button:hover {
+    background-color: #000000; 黒
+}
+ボタンに触れると紫から黒に変化する
+
+*/

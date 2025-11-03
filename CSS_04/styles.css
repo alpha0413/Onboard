@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 
+<div class="parent-div">
+    <p>class属性parent-divの、直接の子(子孫)に該当する要素</p>
+    <div>
+        <p>class属性parent-divの、直接の子孫に当てはまらない要素</p>
+    </div>
+</div>
+このようなHTML構成があった時に
+.parent-div p{
+    color: #800080; 紫 
+    font-weight: 800;
+}
+*/
+
+/* 
+上記の例で、class属性parent-divの直接の子要素pに、
+子孫以外の要素とは別のスタイルを付与しようと思った場合、
+どうセレクタ名を指定すると良いでしょうか？
+
+直接の子孫要素ではない
+.parent-div p {
+    color: #800080; 紫
+    font-weight: 800;
+}
+
+直接の子孫、子要素のみの設定
+.parent-div > p {
+    color: #3ca84e; 緑
+    font-weight: 800;
+}
+※CSSは下に書いてあるスタイルを優先して読み込みます。
+そのため、今回のような場合、上記CSSの記述の順番を入れ替えると、
+どちらの文字色も緑色になってしまいます。スタイルを書く順番に気を付けましょう。
+*/
